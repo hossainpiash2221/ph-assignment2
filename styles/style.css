@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
 
-body {
-    margin: 0px;
-    background-color: black;
-}
-
 :root {
     --font: Inter;
     --primary-color: rgb(0, 0, 0);
     --logo-color: tomato;
 
 }
+
+body {
+    margin: 0px;
+    background-color: black;
+    font-family: var(--font);
+}
+
 
 h1 {
     font-family: var(--font);
@@ -242,9 +244,11 @@ h1 {
 }
 
 /* change your habits */
-.habits,.run {
+.habits,
+.run {
     max-width: calc(1632px - 200px);
     margin: 0px auto;
+
 
 }
 
@@ -279,6 +283,7 @@ h1 {
 .card {
     display: flex;
     gap: 40px;
+    margin: 0px 100px;
 
 }
 
@@ -311,9 +316,9 @@ h1 {
     width: 445px;
 }
 
-.run{
-    margin-top: 100px;
-    margin-bottom: 100px;
+.run {
+
+    margin: 100px 100px;
     border-radius: 18px;
     background: rgb(34, 34, 34);
     padding: 40px 50px 30px 70px;
@@ -322,23 +327,152 @@ h1 {
 
 }
 
-.run2{
+.run2 {
     border-radius: 18px;
     position: absolute;
     top: -200px;
     left: -750px;
-  
-    
+
+
 }
 
-.run-img{
+.run-img {
     width: 400px;
     height: 370px;
     overflow: hidden;
     position: relative;
-   border-radius: 18px;
-   
+    border-radius: 18px;
+
 }
+
+/* bmi calculator  */
+.calculator {
+
+    display: flex;
+    width: calc(1632px - 200px);
+    justify-content: space-between;
+    margin: 0 100px;
+
+}
+
+.bmi-section {
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+}
+
+.bmi-title {
+    color: rgb(255, 255, 255);
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.bmi-title2,
+.team-title {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.bmi-content {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+
+}
+
+table,
+td,
+th {
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+table th {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500px;
+}
+
+table {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 310px;
+    height: 210px;
+    margin-bottom: 130px;
+}
+
+.input-design {
+    border-radius: 8px;
+    padding: 12px 40px 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 200px;
+    border: none;
+}
+
+.input-design2 {
+    width: 478px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+
+}
+
+.your-bmi {
+    width: calc(542px);
+
+}
+
+.your-bmi h3 {
+    margin-bottom: 0px;
+}
+
+.fourth-input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+
+/* our team  */
+.team-title {
+    margin-bottom: 0px;
+}
+
+.trainer {
+
+    border-radius: 18px;
+    width: 100%;
+    height: 376px;
+    object-fit: cover;
+
+}
+
+.team-header, .team-header p{
+    width: 670px;
+    text-align: center;
+    
+}
+
+.team-picture {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+    border-radius: 18px;
+    max-width: calc(1632px - 200px);
+    margin: 0 100px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    
+}
+
+
 
 
 /* shared */
