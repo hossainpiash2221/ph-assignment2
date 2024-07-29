@@ -23,6 +23,7 @@ h1 {
 .logo {
     color: var(--logo-color);
     font-size: 2rem;
+    font-style: italic;
     font-weight: 800;
     font-size: 36px;
 }
@@ -262,12 +263,17 @@ h1 {
 }
 
 .habits-header {
+    width: 670px;
     display: flex;
     flex-direction: column;
+    
     align-items: center;
-    margin-bottom: 58px;
-}
 
+    margin: 0 auto 58px;
+}
+.habits-header p{
+    text-align: center;
+}
 .habits-card {
     color: rgb(255, 255, 255);
 
@@ -456,8 +462,10 @@ table {
 .team-header, .team-header p{
     width: 670px;
     text-align: center;
+    margin-bottom: 50px;
     
 }
+
 
 .team-picture {
     display: grid;
@@ -469,12 +477,74 @@ table {
     margin: 0 100px;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
+
+    margin-bottom: 100px;
     
 }
 
+/* footer  */
+
+footer{
+    background: rgba(255, 255, 255, 0.1);
+    
+    
+}
+
+.footer-content{
+    max-width: calc(1632px - 200px);
+    margin: 0px 100px;
+    display: flex;
+    gap: 150px;
+    justify-content: space-between;
+    
+    text-align: left;
+    padding: 70px 0px;
+}
 
 
+.logo-discription{
+    width: 443px;
+}
 
+.logo-discription .logo{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.chart-title{
+    font-size: 2rem;
+    color: white;
+    
+}
+#list-item{
+    font-size: 1.3rem;
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+    
+}
+
+.primary-text li {
+    padding-left: 0;
+    margin-bottom: 20px; /* Ensure list items start from the left side */
+}
+
+.footer-chart{
+    width: 200px;
+}
+
+hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    max-width: calc(1632px - 200px);
+    margin-bottom: 0px;
+}
+
+
+#copyright{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    
+}
 /* shared */
 .primary-text {
     color: rgba(255, 255, 255, 0.5);
@@ -483,3 +553,5 @@ table {
     font-weight: 400;
     text-align: left;
 }
+
+
